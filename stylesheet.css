@@ -1,0 +1,24 @@
+#frm1{
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.field{
+    margin: 1.5em 0;
+    display: inline-block;
+}
+
+.field label, .field input {
+    display: inline-block;
+}
+
+.field label {
+    min-width: 80px;
+}
+
+.field input{
+    min-width: 15em;
+}

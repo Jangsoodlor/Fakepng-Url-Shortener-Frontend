@@ -15,24 +15,26 @@
     <h1>Fakepng's Shortener by Jangsoodlor</h1>
 
     <form id="frm1" onsubmit="return submitForm()">
-        <div>
-            <label>Name</label>
-            <input type="text" placeholder="name" id="name">
-        </div>
-        
-        <div>
-            <label>Url</label>
-            <input type="text" placeholder="url" id="url">
-        </div>
-        
-        <div>
-            <label>Time</label>
-            <input type="text" placeholder="Example: 7Y2M3W6D9h42m0s" id="time">            
-        </div>
-        <div>
-            <label>Password</label>
-            <input type="password" placeholder="password" id="password">
-        </div>
+        <ul>
+            <li class="field">
+                <label>Name</label>
+                <input class="txtinput" type="text" placeholder="name" id="name">
+            </li>
+            
+            <li class="field">
+                <label>Url</label>
+                <input class="txtinput" type="text" placeholder="url" id="url">
+            </li>
+            
+            <li class="field">
+                <label>Time</label>
+                <input class="txtinput" type="text" placeholder="e.g., 7Y2M3W6D9h42m0s" id="time">            
+            </li>
+            <li class="field">
+                <label>Password</label>
+                <input class="txtinput" type="password" placeholder="password" id="password">
+            </li>
+        </ul>
 
         
         <button type="submit" class="btn btn-primary btn-lg submit" value="submit">submit</button>
