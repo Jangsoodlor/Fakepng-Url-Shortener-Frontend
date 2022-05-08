@@ -11,7 +11,7 @@ function submitForm() {
     }
 
     else if (time !== ''){
-        window.open(`https://short.fakepng.com/create?name=${name}&link=${url}&time=${time}&password=${password}/`, '_blank');
+        window.open(`https://short.fakepng.com/create?name=${name}&link=${url}&time=${time}&password=${password}`, '_blank');
     }
     
 }
