@@ -7,7 +7,7 @@ function submitForm() {
     console.log(name, url, time, password);
 
     if (time === '') {
-        window.open(`https://short.fakepng.com/create?name=${name}&link=${url}&password=${password}/`, '_blank');
+        window.open(`https://short.fakepng.com/create?name=${name}&link=${url}&password=${password}`, '_blank');
     }
 
     else if (time !== ''){
