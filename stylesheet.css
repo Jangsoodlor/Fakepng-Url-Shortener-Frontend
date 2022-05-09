@@ -1,3 +1,4 @@
+
 #frm1{
     margin: 0 auto;
     padding: 1em 1.5em;
@@ -21,4 +22,15 @@
 
 .field input{
     min-width: 15em;
+}
+.HowTo_List {
+    display: inline;
+}
+
+.HowTo_List li{
+    display: block;
+}
+
+.ctn{
+    margin: 0 1em;
 }
