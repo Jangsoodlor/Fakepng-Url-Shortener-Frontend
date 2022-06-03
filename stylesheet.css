@@ -1,7 +1,44 @@
+body {
+    background-color: #282a36;
+    color:	#f8f8f2;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.ctn h1 {
+    color: #ff79c6;
+}
+h2 {
+    color: #ffb86c;
+}
+
+.ctn h3{
+    color: #bd93f9;
+}
+
+.ctn ul{
+    padding: 0px;
+}
+.ctn li {
+    display: inline;
+    
+}
+
+.ctn a{
+    display: inline-block;
+    text-decoration: none;
+    color:  #50fa7b;
+    padding: 1em;
+    max-height: 5em;
+}
+
+.ctn a:hover{
+    background-color: #44475a;
+}
 
 #frm1{
     margin: 0 auto;
-    padding: 1em 1.5em;
+    padding: 0 1.5em;
+    padding-bottom: 2em;
     display: block;
     align-content: center;
     text-align: center;
@@ -14,6 +51,7 @@
 
 .field label, .field input {
     display: inline-block;
+    
 }
 
 .field label {
@@ -22,7 +60,35 @@
 
 .field input{
     min-width: 15em;
+    border-radius: 0%;
+    border: 1px solid  	#8be9fd;
+    padding: 0.25em 1em;
+    background-color:#44475a;
+    caret-color: #f8f8f2;
 }
+
+
+.field input::placeholder {
+    font-family: 'JetBrains Mono', monospace;
+    color: #8be9fd;
+}
+
+.btn{
+    border-radius: 0%;
+    border: 0;
+    background-color:  	#6272a4;
+    color: #f8f8f2;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    
+}
+
+.btn:hover{
+    background-color:  	#bd93f9;
+}
+
+
 .HowTo_List {
     display: inline;
 }
