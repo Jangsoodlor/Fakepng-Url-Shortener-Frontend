@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="form.js"></script>
+    <script defer src="form.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
         </ul>    
     </div>
 
-    <form id="frm1" onsubmit="return submitForm()">
+    <form id="frm1">
         <ul>
             <li class="field">
                 <label>Name</label>
@@ -46,11 +46,15 @@
             </li>
         </ul>
 
+        <button type="button" onClick="submitForm()" class="btn btn-primary btn-lg submit" value="submit">submit</button>
         
-        <button type="submit" class="btn btn-primary btn-lg submit" value="submit">submit</button>
     </form>
 
+    <div id="thomas"></div>
+    
+
     <section class="ctn">
+        
         <h2>How to use "Exp.Time"</h2>
         <p>Exp.Time stands for "Expiration Time". Which consists of</p>
         <p>__Y__M__W__D__h__m__s</p>
