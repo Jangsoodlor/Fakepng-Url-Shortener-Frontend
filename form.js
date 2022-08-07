@@ -34,10 +34,19 @@ function deleteForm(){
     deleteLinkAKtion(deleteLink, deleteName);
 }
 
+function viewForm(){
+    const viewPassword = document.getElementById('password').value;
+    viewUrl(viewPassword);
+}
+
 const changeText = (name) => {
     document.getElementById('thomas').innerHTML = `<a href=https://short.fakepng.com/${name}>Click here to open your link </a>`;
 }
 
 const confirmText = (deleteName) => {
     document.getElementById('thomas').innerHTML = `${deleteName} is deleted`;
+}
+
+const viewUrl = (viewPassword) => {
+    window.open(`https://short.fakepng.com/list?password=${viewPassword}`, "_blank");
 }

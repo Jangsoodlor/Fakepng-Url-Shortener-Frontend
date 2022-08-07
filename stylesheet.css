@@ -4,10 +4,14 @@ body {
     font-family: 'JetBrains Mono', monospace;
 }
 
+.ctn{
+    margin: 0 1em;
+}
+
 .ctn h1 {
     color: #ff79c6;
 }
-h2 {
+.ctn h2 {
     color: #ffb86c;
 }
 
@@ -35,7 +39,7 @@ h2 {
     background-color: #44475a;
 }
 
-#frm1{
+.form{
     margin: 0 auto;
     padding: 0 1.5em;
     padding-bottom: 2em;
@@ -47,6 +51,11 @@ h2 {
 .field{
     margin: 1.5em 0;
     display: inline-block;
+}
+
+.allfield {
+    margin: 1.5em 0;
+    display:inline-block;
 }
 
 .field label, .field input {
@@ -97,6 +106,18 @@ h2 {
     display: block;
 }
 
-.ctn{
-    margin: 0 1em;
+.yui{
+    display: block;
+    max-width: 100%;  
+    height: auto; 
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+}
+
+.yui-container {
+    display: block;
+    width: auto;  
+    text-align: center;  
 }

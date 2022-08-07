@@ -2,21 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script defer src="form.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>View all urls | Fakepng's Shortener U</title>
 </head>
 <body>
-    This is supposed to be a list of all available links that are shortened using Fakepng's api <br>
-    I'm too lazy to write this rn. nvm. <br>
+    <div class="ctn">
+        <h1>Fakepng's URL Shortener</h1>
+        <h3>Front-end by Jangsoodlor</h3>
+    </div>
+
+    <form class="form">
+        <ul>
+            <li class="field allfield">
+                <label>Password</label>
+                <input class="txtinput" type="password" placeholder="Password to view all urls" id="password">
+            </li>
+            <button type="button" onClick="viewForm()" class="btn btn-primary btn-lg submit" value="submit">view</button>
+        </ul>
+    </form>
+    <div class = "yui-container">
+        <img src="https://i.imgur.com/FOaeRyf.gif" class = "yui">
+    </div>
     
-    Honestly, how did you even get in here. <br>
 
-    go touch some grass<br>
-
-    Anyways here is <a href="https://www.youtube.com/watch?v=YOV7yWEv54o">some music to listen while touching some grass</a> <br>
-
-    Not convinced yet? Here is Yui trying to convince you <br>
-    <img src="https://i.imgur.com/UC3qLyh.jpeg" width = "960" height="540">
+    <div class="ctn">
+        <ul>
+            <li>
+                <a href="index.html">back</a>
+            </li>
+        </ul>    
+    </div>
 </body>
 </html>
