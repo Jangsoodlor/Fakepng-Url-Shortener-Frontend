@@ -1,12 +1,4 @@
-const createLink = (link, name) => {
-    fetch(link);
-    changeText(name);
-};
-
-const deleteLinkAKtion = (deleteLink, deleteName) => {
-    fetch(deleteLink);
-    confirmText(deleteName);
-}
+// short url
 
 function submitForm() {
     const name = document.getElementById('name').value;
@@ -26,27 +18,25 @@ function submitForm() {
     }
 }
 
-function deleteForm(){
-    const deleteName = document.getElementById('name').value;
-    const deletePassword = document.getElementById('password').value;
+const createLink = (link, name) => {
+    fetch(link);
+    document.getElementById('thomas').innerHTML = `<a href=https://short.fakepng.com/${name}>Click here to open your link </a>`;
+    
+};
 
-    const deleteLink = `https://short.fakepng.com/remove?name=${deleteName}&password=${deletePassword}`
-    deleteLinkAKtion(deleteLink, deleteName);
+// del URL
+
+function deleteForm() {
+    const name = document.getElementById('name').value;
+    const password = document.getElementById('password').value;
+    const deleteLink = `https://short.fakepng.com/remove?name=${name}&password=${password}`
+    fetch(deleteLink);
+    document.getElementById('thomas').innerHTML = `${name} is deleted`;
 }
+
+// view Url
 
 function viewForm(){
-    const viewPassword = document.getElementById('password').value;
-    viewUrl(viewPassword);
-}
-
-const changeText = (name) => {
-    document.getElementById('thomas').innerHTML = `<a href=https://short.fakepng.com/${name}>Click here to open your link </a>`;
-}
-
-const confirmText = (deleteName) => {
-    document.getElementById('thomas').innerHTML = `${deleteName} is deleted`;
-}
-
-const viewUrl = (viewPassword) => {
-    window.open(`https://short.fakepng.com/list?password=${viewPassword}`, "_blank");
+    const password = document.getElementById('password').value;
+    window.open(`https://short.fakepng.com/list?password=${password}`, "_blank");
 }
